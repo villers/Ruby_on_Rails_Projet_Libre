@@ -1,5 +1,7 @@
 <div class="profile clearfix">
-  <%= image_tag('http://lorempixel.com/130/130/', alt: current_user.name, class: "gravatar") %>
+  <%= image_tag("https://cdn.local.epitech.eu/userprofil/profilview/#{current_user.name}.jpg", alt: current_user.name, class: "gravatar") %>
 </div>
 
+<div><%= current_user.name %></div>
 <div><%= current_user.email %></div>
+<%= render 'shared/tweet_form' %>

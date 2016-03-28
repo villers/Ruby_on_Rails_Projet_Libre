@@ -1,0 +1,14 @@
+<li class="tweet clearfix" "#{feed_item.id}">
+  <%= image_tag("https://cdn.local.epitech.eu/userprofil/profilview/#{feed_item.user.name}.jpg", alt: current_user.name, class: "gravatar") %>
+  <div class="content">
+    <div class="user">
+      <%= link_to feed_item.user.name, feed_item.user %>
+    </div>
+    <div class="tweet-content">
+      <%= feed_item.content %>
+    </div>
+    <div class="tweet-footer">
+      Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
+    </div>
+  </div>
+</li>
