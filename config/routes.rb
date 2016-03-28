@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # Static_pages
   root 'static_pages#home'
   get  'about'    => 'static_pages#about'
