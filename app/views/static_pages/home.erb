@@ -1,24 +1,22 @@
 <div class="row"></div>
   <% if signed_in? %>
-    <% provide(:title, 'Home') %>
+    <%= provide(:title, 'Home') %>
     <aside class="col-md-4">
       <section>
-        = render 'shared/user_info'
+        <%= render 'shared/user_info' %>
       </section>
     </aside>
 
     <div class="col-md-8">
       <div class="timeline">
         <h2 class="title">Tweets</h2>
-        = render 'shared/feed'
+        <%= render 'shared/feed' %>
       </div>
     </div>
   <% else %>
-    <% provide(:title, 'Welcome') %>
+    <%= provide(:title, 'Welcome') %>
     <div class="col-md-12 one-col">
-      <h1>Welcome to Twitter Clone</h1>
-      <p>Start a conversation, explore your interests, and be in the know.</p>
-
+      <h1>Welcome to WacTweet</h1>
       <%= link_to 'Sign up', user_session_url, class: "btn btn-primary" %>
       <%= link_to 'Sign in', new_user_session_url, class: "btn btn-default" %>
     </div>
