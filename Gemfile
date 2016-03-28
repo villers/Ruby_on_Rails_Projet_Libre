@@ -24,7 +24,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'bootstrap-sass'
+gem 'font-awesome-sass', '~> 4.3'
+
+# pagination gem
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -38,10 +45,14 @@ group :development, :test do
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'bullet'
+  gem 'faker'
+  gem 'pry'
+  gem 'quiet_assets'
   gem 'spring'
+  gem 'terminal-notifier-guard'
 end
 
+gem 'rails-html-sanitizer', '~> 1.0.3'
