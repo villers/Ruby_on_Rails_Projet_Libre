@@ -7,7 +7,6 @@
         <% @users.each do |user| %>
           <li class="tweet clearfix">
             <%= image_tag("https://cdn.local.epitech.eu/userprofil/profilview/#{user.name}.jpg", alt: user.name, class: "gravatar") %>
-            <%= link_to user.name, user %>
           </li>
         <% end %>
       </ul>

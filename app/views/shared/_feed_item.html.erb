@@ -2,7 +2,6 @@
   <%= image_tag("https://cdn.local.epitech.eu/userprofil/profilview/#{feed_item.user.name}.jpg", alt: current_user.name, class: "gravatar") %>
   <div class="content">
     <div class="user">
-      <%= link_to feed_item.user.name, feed_item.user %>
     </div>
     <div class="tweet-content">
       <%= feed_item.content %>

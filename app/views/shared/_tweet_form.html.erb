@@ -1,8 +1,8 @@
-<div class="tweet-box">
-  <%= form_for(@tweet) do |f| %>
-    <div class="field">
-      <%= f.text_area :content, placeholder: "Compose new Tweet..." %>
-    </div>
-    <%= f.submit "Post", class: "btn btn-large btn-primary" %>
-  <% end %>
-</div>
+<div class="row">
+		<div class="col-md-8 well">
+          <%= form_for(@tweet) do |f| %>
+            <%= f.text_area :content, class: "col-md-12", rows: 5, placeholder: "Compose new Tweet..." %>
+            <%= f.submit "Post", class: "btn btn-primary" %>
+          <% end %>
+        </div>
+	</div>

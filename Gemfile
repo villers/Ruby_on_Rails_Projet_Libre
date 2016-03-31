@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use mysql as the database for Active Record
-gem 'mysql2', '>= 0.3.13', '< 0.5'
+gem 'sqlite3-ruby'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,7 +30,7 @@ gem 'devise'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'bootstrap-sass'
-gem 'font-awesome-sass', '~> 4.3'
+gem 'font-awesome-sass'
 
 # pagination gem
 gem 'will_paginate'

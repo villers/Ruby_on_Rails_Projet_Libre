@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+
+ body {
+   font-family: 'Lato';
+   padding-top: 75px;
+ }
+
+
+ body {
+   background-color: #f4f4f4;
+ }
